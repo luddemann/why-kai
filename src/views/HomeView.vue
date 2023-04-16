@@ -32,7 +32,7 @@ const setSection = (section) => {
       class="m-auto w-80"
       alt="Why Kai"
     >
-    <div class="absolute left-0 grid w-full grid-cols-6 gap-y-64 px-12">
+    <div class="absolute left-0 grid w-full grid-cols-6 gap-y-48 px-12">
       <button
         class="group relative col-span-1 col-start-1 text-3xl font-black uppercase"
         @click="setSection('about')"
