@@ -2,5 +2,7 @@
 </script>
 
 <template>
-  <h1 class="text-6xl font-bold text-indigo-600 text-center">Why Kai</h1>
+  <h1 class="flex text-center text-6xl font-bold text-indigo-600">
+    Why Kai
+  </h1>
 </template>
