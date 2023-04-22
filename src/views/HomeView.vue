@@ -1,19 +1,31 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import About from '../components/About.vue'
 import Music from '../components/Music.vue'
+import Contact from '../components/Contact.vue'
+import Videos from '../components/Videos.vue'
 
 const activeSection = ref('')
+const showButtons = ref(false)
 
 const setSection = (section) => {
   activeSection.value === section ? activeSection.value = '' : activeSection.value = section
 }
 
+onMounted(() => {
+  setTimeout(() => showButtons.value = true, 2000)
+})
+
 </script>
 
 <template>
-  <div class="fixed z-10 block aspect-video h-full w-full">
-    <div class="absolute z-20 h-full w-full bg-gray-900/10" />
+  <div
+    class="fixed z-10 block aspect-video h-full w-full"
+  >
+    <div
+      class="absolute z-20 h-full w-full bg-black/10"
+      @click="setSection('')"
+    />
     <video
       autoplay
       muted
@@ -26,23 +38,34 @@ const setSection = (section) => {
       >
     </video>
   </div>
-  <section class="absolute z-30 m-auto h-full w-full p-[10px_3%] md:overflow-hidden md:p-[20px_8%]">
+  <section
+    class="relative m-auto flex h-screen max-h-screen w-full flex-col justify-between gap-8 p-[10px_3%] md:overflow-hidden md:p-[20px_8%]"
+  >
     <img
       src="../assets/whykai-logo.png"
-      class="m-auto -mt-10 w-80"
+      class="relative z-30 mx-auto my-0 w-72"
       alt="Why Kai"
     >
-    <div class="absolute left-0 -mt-12 grid w-full grid-cols-4 gap-x-4 gap-y-[40%] md:mt-0 md:grid-cols-6 md:px-12">
+
+    <About v-if="activeSection === 'about'" />
+    <Music v-if="activeSection === 'music'" />
+    <Contact v-if="activeSection === 'contact'" />
+    <Videos v-if="activeSection === 'videos'" />
+
+    <div
+      class="z-30 flex w-full justify-center gap-8 opacity-0 transition-opacity duration-[3000ms] md:gap-24"
+      :class="{'opacity-100': showButtons}"
+    >
       <button
         class="group relative text-3xl font-black uppercase transition focus-visible:ring md:col-span-1 md:col-start-1"
         @click="setSection('about')"
       >
         <img
           src="../assets/about-figur.png"
-          class="m-auto w-12 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20 md:w-24"
+          class="m-auto w-16 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20"
           alt=""
         >
-        <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0 transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-5xl">about</span>
+        <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0 transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl">about</span>
       </button>
       <button
         class="group relative text-3xl font-black uppercase transition focus-visible:ring md:col-span-1 md:col-start-6"
@@ -50,27 +73,33 @@ const setSection = (section) => {
       >
         <img
           src="../assets/music-figur.png"
-          class="m-auto w-12 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20 md:w-24"
+          class="m-auto w-16 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20"
           alt=""
         >
-        <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0 transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-5xl">music</span>
+        <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0 transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl">music</span>
       </button>
-      <button class="text-3xl font-black uppercase transition focus-visible:ring md:col-span-1 md:col-start-1">
-        <img
-          src="../assets/contact-figur.png"
-          class="m-auto w-12 md:w-24"
-          alt=""
-        >
-      </button>
-      <button class="text-3xl font-black uppercase transition focus-visible:ring md:col-span-1 md:col-start-6">
+      <button
+        class="group relative text-3xl font-black uppercase transition focus-visible:ring md:col-span-1 md:col-start-6"
+        @click="setSection('videos')"
+      >
         <img
           src="../assets/film-figur.png"
-          class="m-auto w-12 md:w-24"
+          class="m-auto w-14 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20"
           alt=""
         >
+        <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0 transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl">videos</span>
+      </button>
+      <button
+        class="group relative text-3xl font-black uppercase transition focus-visible:ring md:col-span-1 md:col-start-1"
+        @click="setSection('contact')"
+      >
+        <img
+          src="../assets/contact-figur.png"
+          class="m-auto w-16 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20"
+          alt=""
+        >
+        <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0 transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl">contact</span>
       </button>
     </div>
-    <About v-if="activeSection === 'about'" />
-    <Music v-if="activeSection === 'music'" />
   </section>
 </template>
