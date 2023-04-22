@@ -39,7 +39,7 @@ onMounted(() => {
     </video>
   </div>
   <section
-    class="relative m-auto flex h-full w-full flex-auto flex-col justify-between gap-8 p-[10px_3%] md:overflow-hidden md:p-[20px_8%]"
+    class="relative m-auto flex h-full w-full flex-auto flex-col justify-between gap-4 px-[3%] pb-4 md:overflow-hidden md:px-[8%]"
   >
     <img
       src="../assets/whykai-logo.png"
@@ -62,7 +62,7 @@ onMounted(() => {
       >
         <img
           src="../assets/about-figur.png"
-          class="m-auto w-16 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20"
+          class="m-auto w-12 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20 md:w-16"
           alt=""
         >
         <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0 transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl">about</span>
@@ -73,7 +73,7 @@ onMounted(() => {
       >
         <img
           src="../assets/music-figur.png"
-          class="m-auto w-16 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20"
+          class="m-auto w-12 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20 md:w-16"
           alt=""
         >
         <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0 transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl">music</span>
@@ -84,7 +84,7 @@ onMounted(() => {
       >
         <img
           src="../assets/film-figur.png"
-          class="m-auto w-14 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20"
+          class="m-auto w-10 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20 md:w-14"
           alt=""
         >
         <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0 transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl">videos</span>
@@ -95,7 +95,7 @@ onMounted(() => {
       >
         <img
           src="../assets/contact-figur.png"
-          class="m-auto w-16 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20"
+          class="m-auto w-12 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20 md:w-16"
           alt=""
         >
         <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0 transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl">contact</span>
