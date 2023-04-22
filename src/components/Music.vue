@@ -1,12 +1,7 @@
-<script setup>
-
-</script>
-
 <template>
-  <div class="group relative z-40 m-auto w-full overflow-y-hidden sm:w-1/2 md:w-[500px]">
+  <div class="group relative z-40 m-auto h-full w-full overflow-y-hidden sm:h-[500px] sm:w-1/2 md:w-[500px]">
     <img
       src="../assets/deepfishing.png"
-      class="h-max w-max"
       alt="Deep Fishing album cover"
     >
     <div class="absolute left-0 top-0 grid w-full grid-cols-2 gap-1 font-bold uppercase opacity-100 transition duration-300 group-hover:opacity-100 md:flex md:h-full md:flex-col md:items-center md:justify-center md:gap-12 md:px-24 md:opacity-0">

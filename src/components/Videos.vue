@@ -3,10 +3,9 @@
 </script>
 
 <template>
-  <div class="relative z-40 m-auto w-full md:w-1/2">
+  <div class="relative z-40 m-auto w-full sm:w-[500px] lg:w-1/2">
     <iframe
-      class="w-full"
-      height="400"
+      class="h-[300px] w-full md:h-[400px]"
       src="https://www.youtube.com/embed/5Tg6vW6E264"
       title="YouTube video player"
       frameborder="0"
