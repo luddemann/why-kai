@@ -30,6 +30,7 @@ onMounted(() => {
       autoplay
       muted
       loop
+      playsinline
       class="h-full w-full overflow-hidden object-cover object-center"
     >
       <source
