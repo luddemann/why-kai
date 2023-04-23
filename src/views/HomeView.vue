@@ -66,7 +66,14 @@ onMounted(() => {
           class="m-auto w-12 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20 md:w-16"
           alt=""
         >
-        <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0 transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl">about</span>
+        <span
+          class="
+            absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0
+            transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl
+          "
+        >
+          about
+        </span>
       </button>
       <button
         class="group relative text-3xl font-black uppercase transition focus-visible:ring md:col-span-1 md:col-start-6"
@@ -77,7 +84,14 @@ onMounted(() => {
           class="m-auto w-12 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20 md:w-16"
           alt=""
         >
-        <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0 transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl">music</span>
+        <span
+          class="
+            absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0
+            transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl
+          "
+        >
+          music
+        </span>
       </button>
       <button
         class="group relative text-3xl font-black uppercase transition focus-visible:ring md:col-span-1 md:col-start-6"
@@ -88,7 +102,14 @@ onMounted(() => {
           class="m-auto w-10 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20 md:w-14"
           alt=""
         >
-        <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0 transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl">videos</span>
+        <span
+          class="
+            absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0
+            transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl
+          "
+        >
+          videos
+        </span>
       </button>
       <button
         class="group relative text-3xl font-black uppercase transition focus-visible:ring md:col-span-1 md:col-start-1"
@@ -99,7 +120,14 @@ onMounted(() => {
           class="m-auto w-12 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20 md:w-16"
           alt=""
         >
-        <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0 transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl">contact</span>
+        <span
+          class="
+            absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0
+            transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl
+          "
+        >
+          contact
+        </span>
       </button>
     </div>
   </section>

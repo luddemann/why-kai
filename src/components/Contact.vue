@@ -1,9 +1,10 @@
-<script setup>
-
-</script>
-
 <template>
-  <div class="relative z-40 m-auto max-h-full min-w-full max-w-full overflow-y-scroll border-4 border-black bg-white/90 p-4 text-lg font-semibold sm:min-w-[0] sm:max-w-prose">
+  <div
+    class="
+      relative z-40 m-auto max-h-full min-w-full max-w-full overflow-y-scroll border-4
+      border-black bg-white/90 p-4 text-lg font-semibold sm:min-w-[0] sm:max-w-prose
+    "
+  >
     <h2 class="mb-6 text-4xl">
       Contact
     </h2>

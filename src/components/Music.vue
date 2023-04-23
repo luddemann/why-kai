@@ -4,7 +4,13 @@
       src="../assets/deepfishing.png"
       alt="Deep Fishing album cover"
     >
-    <div class="absolute left-0 top-0 grid w-full grid-cols-2 gap-1 font-bold uppercase opacity-100 transition duration-300 group-hover:opacity-100 md:flex md:h-full md:flex-col md:items-center md:justify-center md:gap-12 md:px-24 md:opacity-0">
+    <div
+      class="
+        absolute left-0 top-0 grid w-full grid-cols-2 gap-1 font-bold
+        uppercase opacity-100 transition duration-300 group-hover:opacity-100
+        md:flex md:h-full md:flex-col md:items-center md:justify-center md:gap-12 md:px-24 md:opacity-0
+      "
+    >
       <a
         class="w-full border-2 border-black bg-white/90 p-2 text-center transition hover:bg-white focus-visible:ring md:p-4"
         href="https://open.spotify.com/album/1XFHWIpPvT27EABbHaXNuv?si=031GIKdLRjy5yasOc_fbhQ"

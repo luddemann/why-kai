@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
   <div class="relative z-40 m-auto w-full sm:w-[500px] lg:w-1/2">
     <iframe
