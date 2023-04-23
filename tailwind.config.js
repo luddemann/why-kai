@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 export default {
   content: [
     './index.html',
@@ -24,6 +26,12 @@ export default {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addVariant }) => {
+      addVariant('readonly', '&[readonly]')
+      addVariant('hidden', '&[hidden]')
+      addVariant('disabled', '&:where(:disabled, [disabled=true])')
+    }),
+  ],
 }
 

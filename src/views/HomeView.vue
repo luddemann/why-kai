@@ -7,6 +7,7 @@ import Videos from '../components/Videos.vue'
 
 const activeSection = ref('')
 const showButtons = ref(false)
+const showVideo = ref(false)
 
 const setSection = (section) => {
   activeSection.value === section ? activeSection.value = '' : activeSection.value = section
@@ -14,6 +15,7 @@ const setSection = (section) => {
 
 onMounted(() => {
   setTimeout(() => showButtons.value = true, 2000)
+  setTimeout(() => showVideo.value = true, 300)
 })
 
 </script>
@@ -23,7 +25,8 @@ onMounted(() => {
     class="fixed z-10 block aspect-video h-full w-full"
   >
     <div
-      class="absolute z-20 h-full w-full bg-black/10"
+      class="absolute z-20 h-full w-full bg-black transition-all duration-1000"
+      :class="{'bg-black/10': showVideo}"
       @click="setSection('')"
     />
     <video
