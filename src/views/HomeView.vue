@@ -43,11 +43,11 @@ onMounted(() => {
     </video>
   </div>
   <section
-    class="relative m-auto flex h-full w-full flex-auto flex-col justify-between gap-4 px-[3%] pb-4 md:overflow-hidden md:px-[8%]"
+    class="relative m-auto flex h-full w-full flex-auto flex-col justify-between gap-4 px-[3%] pb-12 md:overflow-hidden md:px-[8%]"
   >
     <img
       src="../assets/whykai-logo.png"
-      class="relative z-30 mx-auto my-0 w-60"
+      class="relative z-30 mx-auto mt-12 w-60 opacity-90 md:w-80"
       alt="Why Kai"
     >
 
@@ -57,80 +57,36 @@ onMounted(() => {
     <Videos v-if="activeSection === 'videos'" />
 
     <div
-      class="z-30 flex w-full justify-center gap-8 opacity-0 transition-opacity duration-[3000ms] md:gap-24"
+      class="z-30 flex w-full justify-center gap-4 opacity-0 transition-opacity duration-[3000ms] md:gap-16"
       :class="{'opacity-100': showButtons}"
     >
       <button
-        class="group relative text-3xl font-black uppercase transition focus-visible:ring md:col-span-1 md:col-start-1"
+        class="relative text-base font-black uppercase tracking-widest text-gray-800 decoration-4 underline-offset-4 transition-all hover:underline focus-visible:ring md:text-xl"
+        aria-label="Om"
         @click="setSection('about')"
       >
-        <img
-          src="../assets/about-figur.png"
-          class="m-auto w-12 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20 md:w-16"
-          alt=""
-        >
-        <span
-          class="
-            absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0
-            transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl
-          "
-        >
-          about
-        </span>
+        About
       </button>
       <button
-        class="group relative text-3xl font-black uppercase transition focus-visible:ring md:col-span-1 md:col-start-6"
+        class="relative text-base font-black uppercase tracking-widest text-gray-800 decoration-4 underline-offset-4 transition hover:underline focus-visible:ring md:text-xl"
+        aria-label="Musikk"
         @click="setSection('music')"
       >
-        <img
-          src="../assets/music-figur.png"
-          class="m-auto w-12 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20 md:w-16"
-          alt=""
-        >
-        <span
-          class="
-            absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0
-            transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl
-          "
-        >
-          music
-        </span>
+        Music
       </button>
       <button
-        class="group relative text-3xl font-black uppercase transition focus-visible:ring md:col-span-1 md:col-start-6"
+        class="relative text-base font-black uppercase tracking-widest text-gray-800 decoration-4 underline-offset-4 transition hover:underline focus-visible:ring md:text-xl"
+        aria-label="Video"
         @click="setSection('videos')"
       >
-        <img
-          src="../assets/film-figur.png"
-          class="m-auto w-10 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20 md:w-14"
-          alt=""
-        >
-        <span
-          class="
-            absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0
-            transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl
-          "
-        >
-          videos
-        </span>
+        Video
       </button>
       <button
-        class="group relative text-3xl font-black uppercase transition focus-visible:ring md:col-span-1 md:col-start-1"
+        class="relative text-base font-black uppercase tracking-widest text-gray-800 decoration-4 underline-offset-4 transition hover:underline focus-visible:ring md:text-xl"
+        aria-label="Kontakt"
         @click="setSection('contact')"
       >
-        <img
-          src="../assets/contact-figur.png"
-          class="m-auto w-12 transition duration-500 group-hover:opacity-20 group-focus-visible:opacity-20 md:w-16"
-          alt=""
-        >
-        <span
-          class="
-            absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base opacity-0
-            transition duration-500 group-hover:opacity-100 group-focus-visible:opacity-100 md:text-2xl
-          "
-        >
-          contact
-        </span>
+        Contact
       </button>
     </div>
   </section>

@@ -11,7 +11,7 @@
     <p class="mb-2">
       contact@whykai.no
     </p>
-    <p>+47 47671059</p>
+    <a href="tel:+4747671059">+47 47671059</a>
     <div class="mt-6 flex items-center gap-4">
       <a
         href="https://www.instagram.com/why_kai.wav/?hl=nb"
