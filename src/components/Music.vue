@@ -1,5 +1,5 @@
 <template>
-  <div class="group relative z-40 m-auto h-full w-[92%] overflow-y-hidden sm:h-[500px] sm:w-1/2 md:w-[500px]">
+  <div class="group relative z-40 m-auto h-fit h-full w-[92%] overflow-y-hidden sm:h-[500px] sm:w-1/2 md:w-[500px]">
     <img
       src="../assets/deepfishing.png"
       alt="Deep Fishing album cover"

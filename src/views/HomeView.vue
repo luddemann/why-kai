@@ -43,11 +43,11 @@ onMounted(() => {
     </video>
   </div>
   <section
-    class="relative m-auto flex h-full w-full flex-auto flex-col justify-between gap-4 px-[3%] pb-12 md:overflow-hidden md:px-[8%]"
+    class="relative m-auto flex h-full w-full flex-auto flex-col justify-between gap-16 px-[3%] pb-8 md:overflow-hidden md:px-[8%] md:pb-12"
   >
     <img
       src="../assets/whykai-logo.png"
-      class="relative z-30 mx-auto mt-12 w-60 opacity-90 md:w-80"
+      class="relative z-30 mx-auto mt-8 w-60 opacity-90 md:mt-12 md:w-80"
       alt="Why Kai"
     >
 
